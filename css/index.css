@@ -72,9 +72,9 @@ h1, h2, h3, h4, h5 {
 /* Tablet */
 @media only screen and (max-width: 800px) {
   .container {
-    max-width: 780px;
+    max-width: 750px;
   }
-
+}
 /* header */
 
 header {
@@ -86,13 +86,20 @@ header {
 /* Tablet */
 @media only screen and (max-width: 800px) {
   header {
+    /*width: 95%;*/
     flex-flow: column wrap;
+    align-items: center;
   }
 }
 
 @media only screen and (max-width: 800px) {
   header nav {
-    margin-left: 40px;
+    width: 725px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px red solid;
+    margin-top: 10px;
+    /*text-align: center;*/
   }
 }
 
@@ -106,8 +113,7 @@ header nav a {
 /* Tablet */
 @media only screen and (max-width: 800px) {
   header nav a {
-    /*width: 100%;*/
-    /*margin-left: 20px;*/
+    /*margin-right: 0;*/
   }
 }
 
@@ -145,7 +151,6 @@ header .logo {
 @media only screen and (max-width: 800px) {
   .cta {
     justify-content: center;
-
   }
 }
 
@@ -157,6 +162,12 @@ header .logo {
   padding: 0px 75px;
 }
 
+@media only screen and (max-width: 800px) {
+  .cta .cta-text {
+    margin-top: 78px;
+  }
+}
+
 .cta .cta-text button {
   background: white;
   vertical-align: top;
@@ -165,6 +176,12 @@ header .logo {
   font-size: 17px;
   border: 1px solid black;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .cta .cta-text button {
+    margin-top: 0;
+  }
 }
 
 .cta .cta-text button:hover {
@@ -191,6 +208,11 @@ header .logo {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 800px) {
+  .main-content {
+  margin-top: 25px;
+  }
+}
 .main-content .top-content {
   padding: 0 10px;
   display: flex;
@@ -207,6 +229,14 @@ header .logo {
 
 .main-content .middle-img {
   margin-top: 45px;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-content .middle-img {
+  width: 758px;
+  margin-left: 16px;
+  margin-top: 39px;
+}
 }
 
 .main-content .bottom-content {
@@ -230,6 +260,12 @@ header .logo {
   padding: 39px 10px 0;
 }
 
+@media only screen and (max-width: 800px) {
+  .contact {
+  margin-top: 78px;
+  }
+}
+
 .contact p {
   margin: 20px 0;
 }
@@ -240,22 +276,6 @@ footer {
   font-size: 14px;
 }
 
-
-/* Tablet Styles */
-/*@media only screen and (max-width: 800px) {
-
-  header {
-    flex-flow: column wrap;
-  }
-
-  header nav {
-    width: 40%;
-  }
-
-}
-*/
-
-
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
 
@@ -263,8 +283,8 @@ footer {
     flex-flow: column wrap;
   }
 
-  header nav {
+  /* header nav {
     width: 40%;
-  }
+  } */
 
 }
