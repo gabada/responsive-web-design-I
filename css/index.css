@@ -69,6 +69,12 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
+/* Tablet */
+@media only screen and (max-width: 800px) {
+  .container {
+    max-width: 780px;
+  }
+
 /* header */
 
 header {
@@ -77,11 +83,32 @@ header {
   justify-content: space-between;
 }
 
+/* Tablet */
+@media only screen and (max-width: 800px) {
+  header {
+    flex-flow: column wrap;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header nav {
+    margin-left: 40px;
+  }
+}
+
 header nav a {
   margin-right: 65px;
   font-size: 14px;
   color: gray;
   text-decoration: none;
+}
+
+/* Tablet */
+@media only screen and (max-width: 800px) {
+  header nav a {
+    /*width: 100%;*/
+    /*margin-left: 20px;*/
+  }
 }
 
 header nav a:hover {
@@ -100,10 +127,26 @@ header .logo {
   margin-top: 25px;
 }
 
+@media only screen and (max-width: 800px) {
+  header .logo {
+    order: -1;
+    align-self: center;
+    margin-bottom: 30px;
+  }
+}
+
 /* cta */
 
 .cta {
   display: flex;
+}
+
+/* Tablet */
+@media only screen and (max-width: 800px) {
+  .cta {
+    justify-content: center;
+
+  }
 }
 
 .cta .cta-text {
@@ -131,6 +174,13 @@ header .logo {
 
 .cta img {
   margin-top: 69px;
+}
+
+/* Tablet */
+@media only screen and (max-width: 800px) {
+  .cta img {
+    display: none;
+  }
 }
 
 .main-content {
@@ -192,7 +242,7 @@ footer {
 
 
 /* Tablet Styles */
-@media only screen and (max-width: 800px) {
+/*@media only screen and (max-width: 800px) {
 
   header {
     flex-flow: column wrap;
@@ -203,7 +253,7 @@ footer {
   }
 
 }
-
+*/
 
 
 /* Mobile Styles */
