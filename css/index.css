@@ -331,12 +331,19 @@ header .logo {
 @media only screen and (max-width: 500px) {
   .main-content .bottom-content {
   flex-flow: column wrap;
-  width: 450px;
-  margin-top: 20px;
+  width: 480px;
+  margin-top: 31px;
   margin-left: 10px;
+  align-content: space-around;
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .main-content .bottom-content .text-content {
+  margin-bottom: 72px;
+  width: 450px;
+  }
+}
 .contact {
   margin-top: 57px;
   border-top: 1px solid black;
@@ -346,6 +353,15 @@ header .logo {
 @media only screen and (max-width: 800px) {
   .contact {
   margin-top: 78px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact {
+  width: 460px;
+  margin-top: -27px;
+  margin-left: 20px;
+  padding: 35px 0 0;
   }
 }
 
@@ -359,6 +375,12 @@ footer {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 500px) {
+  footer {
+    font-size: 16px;
+    margin-top: 26px;
+  }
+}
 /* Mobile Styles */
 /* @media only screen and (max-width: 500px) {
 
