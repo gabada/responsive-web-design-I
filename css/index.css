@@ -373,6 +373,7 @@ header .logo {
   .contact p {
     margin-top: 10px;
   }
+}
 
 footer {
   margin: 32px 0;
@@ -386,15 +387,3 @@ footer {
     margin-top: 26px;
   }
 }
-/* Mobile Styles */
-/* @media only screen and (max-width: 500px) {
-
-  header {
-    flex-flow: column wrap;
-  } */
-
-  /* header nav {
-    width: 40%;
-  } */
-
-/* } */
